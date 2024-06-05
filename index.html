@@ -6,14 +6,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v20.0&appId=1141920940407111" nonce="rBwLutS1"></script>
+    
     <h1>Dab how you doin</h1>
+
+    <div class="fb-login-button" data-width="100" data-size="" data-button-type="" data-layout="" data-auto-logout-link="false" data-use-continue-as="false"></div>
+    
     <script>
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{your-app-id}',
+      appId      : '1141920940407111',
       cookie     : true,
       xfbml      : true,
-      version    : '{api-version}'
+      version    : 'v20.0'
     });
       
     FB.AppEvents.logPageView();   
@@ -27,6 +33,6 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
+    </script>
 </body>
 </html>
